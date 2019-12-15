@@ -142,7 +142,7 @@
             PrintWriter p= response.getWriter();          
             String id=request.getParameter("categorie");
             Class.forName("com.mysql.jdbc.Driver");
-            Connection c= DriverManager.getConnection("jdbc:mysql://localhost/hack", "root", "");
+            Connection c= DriverManager.getConnection("jdbc:mysql://lhd-taklidi-mysql.mysql.database.azure.com/hack", "imen@lhd-taklidi-mysql", "Uzumaki11");
             Statement f=c.createStatement();
             ResultSet r;
             if(id.isEmpty()==true){

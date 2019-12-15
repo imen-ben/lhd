@@ -52,7 +52,7 @@
             String id=request.getParameter("id");
             Class.forName("com.mysql.jdbc.Driver");
             Connection c;
-            c= DriverManager.getConnection("jdbc:mysql://localhost/hack", "root", "");
+            c= DriverManager.getConnection("jdbc:mysql://lhd-taklidi-mysql.mysql.database.azure.com/hack", "imen@lhd-taklidi-mysql", "Uzumaki11");
             Statement f=c.createStatement();
             ResultSet g =f.executeQuery("select  DISTINCT count(*) nbr from panier");
             //Récupération du panier dans la session ou création si premier appel et n’existe pas
